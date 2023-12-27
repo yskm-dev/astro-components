@@ -1,0 +1,179 @@
+@use "variables" as *;
+@use "mixin" as *;
+@use "functions" as *;
+
+@keyframes ROTATE {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(154deg);
+  }
+}
+
+@keyframes MOVE_RIGHT {
+  0% {
+    transform: translateX(rem(-18));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes FADE_IN {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FADE_OUT {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ZOOM_OUT {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes MOVE_ARROW {
+  30% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-1rem);
+  }
+
+  70% {
+    opacity: 1;
+  }
+}
+
+@keyframes MOVE_LINE {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes MOVE_IMAGE1 {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+
+@keyframes MOVE_IMAGE2 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+
+@keyframes MOVE_RESTAURANT_IMAGE1 {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+
+@keyframes MOVE_RESTAURANT_IMAGE2 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}

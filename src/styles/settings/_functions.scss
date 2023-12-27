@@ -1,0 +1,28 @@
+@use "variables" as *;
+@use "sass:math";
+
+// calculation
+@function rem($size, $base: 10) {
+  @return math.div($size, $base) * 1rem;
+}
+
+@function vw($size) {
+  @return math.div($size, map-get($design-size, pc-width)) * 100vw;
+}
+
+@function vw_sp($size) {
+  @return math.div($size, map-get($design-size, sp-width)) * 100vw;
+}
+
+@function vh($size) {
+  @return math.div($size, map-get($design-size, pc-height)) * 100vh;
+}
+
+@function vh_sp($size) {
+  @return math.div($size, map-get($design-size, sp-height)) * 100vh;
+}
+
+// rem or vw 小さい方のサイズを取得する
+@function min_pc($size) {
+  @return min(rem($size), vw($size));
+}
