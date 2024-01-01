@@ -1,9 +1,6 @@
 {
-  "printWidth": 100,
-  "tabWidth": 2,
-  "semi": false,
-  "singleQuote": true,
   "plugins": ["prettier-plugin-astro", "prettier-plugin-astro-organize-imports"],
+  "pluginSearchDirs": false,
   "overrides": [
     {
       "files": "*.astro",
